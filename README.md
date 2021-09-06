@@ -1,4 +1,4 @@
-#Iniciando o projeto
+# Iniciando o projeto
 
 * Para iniciar o projeto rode 'make run' no terminal.
 
