@@ -1,0 +1,8 @@
+flask
+flask-admin
+flask-sqlalchemy
+flask-migrate
+dynaconf
+python-dotenv
+flask-wtf
+email_validator

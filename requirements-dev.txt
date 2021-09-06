@@ -1,0 +1,11 @@
+#depêndencias utilizadas apenas durante o processo de produção
+black #ferramenta para formatar o código automaticamente
+ipython #
+ipdb #
+flake8 # ferramenta para verificar se o código tá escrito corretamente
+flask-debugtoolbar # ferramenta utiliza para fazer o debug da parte de templates
+flask-shell-ipython #
+isort #
+pytest #
+pytest-flask #forne funções prontas para fazer testes, como a client e config
+pytest-cov #fornece uma cobertura de testes

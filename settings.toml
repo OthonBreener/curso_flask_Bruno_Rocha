@@ -1,0 +1,37 @@
+[default]
+DEBUG = false
+FLASK_ADMIN_SWATCH = "cerulean"
+EXTENSIONS = [
+    "apilanches.ext.db:init_app",
+    "apilanches.ext.auth:init_app",
+    "apilanches.ext.admin:init_app",
+    "apilanches.ext.migrate:init_app",
+    "apilanches.ext.cli:init_app",
+    "apilanches.ext.site:init_app",
+    "apilanches.ext.hooks:init_app",
+]
+
+UPLOAD_FOLDER = "uploads"
+
+[development]
+DEBUG = true
+SQLALCHEMY_DATABASE_URI = 'sqlite:///Api_Lanches_Ibia.db'
+SQLALCHEMY_TRACK_MODIFICATIONS = false
+DEBUG_TB_TEMPLATE_EDITOR_ENABLED = true
+DEBUG_TB_PROFILER_ENABLED = true
+DEBUG_TB_INTERCEPT_REDIRECTS = false
+EXTENSIONS = [
+    "dynaconf_merge",
+    "apilanches.ext.db:init_app",
+    "apilanches.ext.auth:init_app",
+    "apilanches.ext.admin:init_app",
+    "apilanches.ext.migrate:init_app",
+    "apilanches.ext.cli:init_app",
+    "apilanches.ext.toolbar:init_app",
+    "apilanches.ext.site:init_app",
+    "apilanches.ext.hooks:init_app",
+]
+
+[production]
+SQLALCHEMY_DATABASE_URI = 'mysql://..'
+SQLALCHEMY_TRACK_MODIFICATIONS = false
