@@ -15,7 +15,7 @@
 8. O tamplate base contém as coisas comum para todo o site, o restante apenas o que for específico dele. Utilizando os blocos
 é possível sobrepor o bloco desejavel, com o comando {% extends  "base.html" %} no template que vai herdar o base.
 9. Com o intuito de reutilizar algum código é criado as macros.
-10. A conexão do front com o back é feita atraves das rotas de http:
+10. A conexão do front com as paginas é feita atraves das rotas de http:
 ```
             <a class="navbar-item" href="{{url_for('site.restaurants')}}">
               Restaurantes
@@ -108,6 +108,8 @@ O paramêtro methods dentro do app.route define que tipo de metodos http a funç
 
 
 * Debug
+
+Para debugar o código foi utilizado o pdb padrão do python.
 
 1. request.form: acessa os dados enviados via request.
 2. request.files: acessa os dados no caso de arquivos de multipart (como imagens).
